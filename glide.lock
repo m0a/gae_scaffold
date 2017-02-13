@@ -1,0 +1,43 @@
+hash: 027f393da178ea8929dfcd91c596c2340bf86c133738e49a95305315327b5ea7
+updated: 2017-02-13T19:04:03.71966+09:00
+imports:
+- name: github.com/favclip/testerator
+  version: c1da7cdf985298310bdd034bd076c93f58c18613
+- name: github.com/k0kubun/pp
+  version: 027a6d1765d673d337e687394dbe780dd64e2a1e
+- name: github.com/mjibson/goon
+  version: a9ac1d26f6dbfd9538f4e1e02a04061ef41c1c17
+- name: google.golang.org/appengine
+  version: 150dc57a1b433e64154302bdc40b6bb8aefa313a
+  subpackages:
+  - aetest
+  - datastore
+  - internal
+  - internal/app_identity
+  - internal/base
+  - internal/datastore
+  - internal/log
+  - internal/memcache
+  - internal/modules
+  - internal/remote_api
+  - internal/user
+  - log
+  - memcache
+  - user
+testImports:
+- name: github.com/golang/protobuf
+  version: 8ee79997227bf9b34611aee7946ae64735e6fd93
+  subpackages:
+  - proto
+- name: github.com/mattn/go-colorable
+  version: 5411d3eea5978e6cdc258b30de592b60df6aba96
+- name: github.com/mattn/go-isatty
+  version: 281032e84ae07510239465db46bf442aa44b953a
+- name: golang.org/x/net
+  version: 61557ac0112b576429a0df080e1c2cef5dfbb642
+  subpackages:
+  - context
+- name: golang.org/x/sys
+  version: aaabbdc969c3935a2a7f61efac801e7163c73a2a
+  subpackages:
+  - unix

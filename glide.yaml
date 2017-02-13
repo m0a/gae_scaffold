@@ -1,0 +1,8 @@
+package: github.com/m0a/gae_scaffold
+import:
+- package: google.golang.org/appengine
+  version: ^1.0.0
+- package: github.com/mjibson/goon
+- package: github.com/favclip/testerator
+- package: github.com/k0kubun/pp
+  version: ^2.3.0

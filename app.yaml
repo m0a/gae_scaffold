@@ -1,0 +1,50 @@
+application: gaescaffold
+version: 1
+runtime: go
+api_version: go1
+
+# デフォルトでキャッシュを効かせる場合
+# default_expiration: "4d 5h"
+
+handlers:
+# - url: /
+#   static_files: static/html/index.html
+#   upload: static/html/index.html
+
+# - url: /(index.html|image.html)
+#   static_files: static/html/\1
+#   upload: static/html/.*
+
+# - url: /css
+#   static_dir: static/css
+
+# - url: /js
+#   static_dir: static/js
+
+# - url: /fonts
+#   static_dir: static/fonts
+
+# - url: /images/(.*\.(gif|png|jpg|svg))$
+#   static_files: static/images/\1
+#   upload: static/images/.*\.(gif|png|jpg|svg)$
+
+# - url: /favicon\.ico
+#   static_files: favicon.ico
+#   upload: favicon\.ico
+
+# - url: /robots\.txt
+#   static_files: robots.txt
+#   upload: robots\.txt
+
+# - url: /sitemap\.xml
+#   static_files: sitemap.xml
+#   upload: sitemap\.xml
+
+- url: /.*
+  script: _go_app
+
+nobuild_files:
+- vendor
+
+skip_files:
+- vendor/.*$
